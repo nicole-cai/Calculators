@@ -1,0 +1,27 @@
+
+<div id="box">
+{{title}}
+<button (click)="changeTitle()">Press Me</button>
+<br>
+<br>
+<p id="p1">{{output}}</p>
+<br>
+<button (click)="add()">ADD</button>
+<br>
+<button (click)="subtract()">SUBTRACT</button>
+<br>
+<button (click)="multiply()">MULTIPLY</button>
+<br>
+<button (click)="divide()">DIVIDE</button>
+<br>
+<button (click)="clear()">AC</button>
+<br>
+<button (click)="percentage()">%</button>
+<br>
+<button (click)="squareRoot()">SQUARE ROOT</button>
+<br>
+<button (click)="convertSign()">+/-</button>
+<br>
+<p>Enter a number:</p>
+<input name="input" [(ngModel)]="input" type="number" >
+</div>

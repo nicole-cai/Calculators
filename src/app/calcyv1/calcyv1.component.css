@@ -1,0 +1,26 @@
+button {
+    color: white;
+    background-color: rgb(247, 7, 195);
+}
+
+button:hover{
+    background-color: rgb(252, 201, 241);
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#p1{
+    font-size: x-large;
+    text-align: right;
+    border-style: solid;
+}
+
+#box{
+    margin: 50px;
+    width: 200px; 
+}

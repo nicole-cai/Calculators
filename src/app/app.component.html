@@ -1,0 +1,25 @@
+<!-- <mat-menu #appMenu="matMenu">
+    <button mat-menu-item routerLink="/v1">v1</button>
+    <button mat-menu-item routerLink="/v2">v2</button>
+  </mat-menu>
+  
+  <button mat-icon-button [matMenuTriggerFor]="appMenu">
+    Menu
+  </button> -->
+
+  <mat-sidenav-container class="example-container" >
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
+                 (closed)="events.push('close!')">
+    <button mat-button routerLink="/v1">v1</button>
+    <br>
+    <button mat-button routerLink="/v2">v2</button>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <p><button mat-button (click)="sidenav.toggle()">Menu</button></p>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+<br>
+

@@ -1,0 +1,24 @@
+<div class="calculator">
+    <div class="display">{{display || 0}}</div>
+  <!--  <input type="number" class="display" [(ngModel)]="display" > -->
+    <button class="btn" (click)="clear()">C</button>
+    <button class="btn"(click)="changeSign()">+/-</button>
+    <button class="btn"(click)="percentage()">%</button>
+    <button class="rbtn" (click)="divide()">/</button>
+    <button class ="btn" (click)="append(7)">7</button>
+    <button class="btn" (click)="append(8)">8</button>
+    <button class="btn" (click)="append(9)">9</button>
+    <button class="rbtn" (click)="multiply()">x</button>
+    <button class="btn" (click)="append(4)">4</button>
+    <button class="btn" (click)="append(5)">5</button>
+    <button class="btn" (click)="append(6)">6</button>
+    <button class="rbtn" (click)="subtract()">-</button>
+    <button class="btn" (click)="append(1)">1</button>
+    <button class="btn" (click)="append(2)">2</button>
+    <button class="btn" (click)="append(3)">3</button>
+    <button class="rbtn" (click)="add()">+</button>
+    <button class="zero btn" (click)="append(0)">0</button>
+    <button class="btn" (click)="dot()">.</button>
+    <button class="rbtn" (click)="equal()">=</button>
+ 
+</div>
