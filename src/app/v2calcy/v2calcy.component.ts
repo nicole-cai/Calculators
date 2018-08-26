@@ -95,8 +95,8 @@ export class V2calcyComponent implements OnInit {
 
   equal(){
     this.display = this.operator (
-      parseFloat(this.display), 
-      parseFloat(this.previous)).toString();
+      parseFloat(this.previous), 
+      parseFloat(this.display)).toString();
     this.previous = null;
   }
   append(number){
